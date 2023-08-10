@@ -1,0 +1,155 @@
+
+  :root {
+    --rate: 19.9%;
+    --function: ease-in-out;
+    --slide-distortion-delay: 0s;
+    --slide-distortion-time: 0.5s;
+    --slide-reset-delay: 0.4s;
+    --slide-reset-time: 0.5s;
+    --slider-offset: 0%;
+    --slider-time: 1s;
+  }
+  
+
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .wrapper {
+    padding: 0;
+  }
+  
+  .slider {
+    overflow: hidden;
+  }
+  
+  .slider__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transform: translateX(var(--slider-offset));
+    transition-property: transform;
+    transition-duration: var(--slider-time);
+    transition-timing-function: ease;
+    will-change: transform;
+  }
+  
+  .slider__item {
+    flex: 1 0 100%;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+  
+  
+  .slider__image {
+    width: 100%;
+    height: auto;
+    transform: translateX(0);
+    animation-delay: var(--slide-distortion-delay), var(--slide-reset-delay);
+    animation-duration: var(--slide-distortion-time), var(--slide-reset-time);
+    animation-fill-mode: forwards, forwards;
+    animation-direction: normal, reverse;
+  }
+  
+
+  
+
+  
+
+  
+
+
+     
+     
+   
+ 
+        
+        
+
+
+      
+   
+        
+          
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav{
+ 
+color: #08521e;
+ font-size: 17px;
+ text-decoration: none;
+}
+.nav:hover{
+color: #460763;
+}
+@media (max-width:700px) {
+  .youtube-video{
+    width: 360px;
+  }
+}
+@media (max-width:990px) {
+  .nav-width{
+    width: 515px;
+  }
+}
+@media (max-width:700px) {
+  .nav-width{
+    width: 380px;
+  }
+}
+@media (max-width:990px) {
+  .insta-img{
+    width: 475px !important;
+    margin-top: 200px;
+  }
+}
+@media (max-width:700px) {
+  .insta-img{
+    width: 700px;
+  }
+}
+.slider-log{
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+
+}
+.twitter{
+  height: 400px;
+ 
+}
+.footer{
+  background-color: #229e47;
+  margin-top: 300px;
+  color: #F0F8FF;
+  text-decoration: none;
+}
+@media (max-width:700px) {
+ .tweet{
+  
+    margin-top: 80px;
+
+ } 
+}
